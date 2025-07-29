@@ -1,0 +1,26 @@
+.recipe-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.recipe-list__empty {
+  color: var(--color-text-2);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.17rem;
+}
+
+.recipe-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 28px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .recipe-list__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
